@@ -105,7 +105,7 @@
 		7A15D46F2CB5D97B00BC4F99 /* highlighter.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = highlighter.css; path = ../../../dist_safari/highlighter.css; sourceTree = "<group>"; };
 		7A6480582D820A9800A5924D /* reader.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = reader.css; path = ../../../dist_safari/reader.css; sourceTree = "<group>"; };
 		7A6535C82D8B530300DDF54C /* reader-script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "reader-script.js"; path = "../../../dist_safari/reader-script.js"; sourceTree = "<group>"; };
-		7AC138862E4B9C8E00B6F4CF /* side-panel.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = "side-panel.html"; path = "/Users/kepano/Documents/Git/obsidian-clipper/dist_safari/side-panel.html"; sourceTree = "<absolute>"; };
+		7AC138862E4B9C8E00B6F4CF /* side-panel.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = "side-panel.html"; path = "../../../dist_safari/side-panel.html"; sourceTree = "<group>"; };
 		7AEF056F2CA0F50D005FFBC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
 		7AEF05702CA0F50D005FFBC2 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		7AEF05712CA0F50D005FFBC2 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
@@ -688,7 +688,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 37;
+				CURRENT_PROJECT_VERSION = 38;
 				DEVELOPMENT_TEAM = 6JSW4SJWN9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
@@ -700,7 +700,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 0.11.10;
+				MARKETING_VERSION = 0.12.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -719,7 +719,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 37;
+				CURRENT_PROJECT_VERSION = 38;
 				DEVELOPMENT_TEAM = 6JSW4SJWN9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
@@ -731,7 +731,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 0.11.10;
+				MARKETING_VERSION = 0.12.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -754,7 +754,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 37;
+				CURRENT_PROJECT_VERSION = 38;
 				DEVELOPMENT_TEAM = 6JSW4SJWN9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
@@ -770,7 +770,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.11.10;
+				MARKETING_VERSION = 0.12.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -793,7 +793,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 37;
+				CURRENT_PROJECT_VERSION = 38;
 				DEVELOPMENT_TEAM = 6JSW4SJWN9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
@@ -809,7 +809,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.11.10;
+				MARKETING_VERSION = 0.12.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -832,7 +832,7 @@
 				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Obsidian Web Clipper.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 37;
+				CURRENT_PROJECT_VERSION = 38;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "Shared\\ (App)/Assets.xcassets";
 				DEVELOPMENT_TEAM = 6JSW4SJWN9;
@@ -847,7 +847,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 0.11.10;
+				MARKETING_VERSION = 0.12.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -867,7 +867,7 @@
 				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Obsidian Web Clipper.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 37;
+				CURRENT_PROJECT_VERSION = 38;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "Shared\\ (App)/Assets.xcassets";
 				DEVELOPMENT_TEAM = 6JSW4SJWN9;
@@ -882,7 +882,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 0.11.10;
+				MARKETING_VERSION = 0.12.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -905,7 +905,7 @@
 				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Obsidian Web Clipper.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 37;
+				CURRENT_PROJECT_VERSION = 38;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 6JSW4SJWN9;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -920,7 +920,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 0.11.10;
+				MARKETING_VERSION = 0.12.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -944,7 +944,7 @@
 				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Obsidian Web Clipper.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 37;
+				CURRENT_PROJECT_VERSION = 38;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 6JSW4SJWN9;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -959,7 +959,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MARKETING_VERSION = 0.11.10;
+				MARKETING_VERSION = 0.12.0;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
