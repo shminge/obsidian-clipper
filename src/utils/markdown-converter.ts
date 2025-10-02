@@ -175,6 +175,8 @@ export function createMarkdownContent(content: string, url: string) {
 				src = images[0].src;
 			}
 
+			// remove query parameters
+			src = src.replace(/\?.*/, "");
 		
 			let caption = '';
 
