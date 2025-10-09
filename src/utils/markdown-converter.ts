@@ -606,6 +606,53 @@ export function createMarkdownContent(content: string, url: string) {
 		}
 	});
 
+	// Custom rule for proper link spacing
+	turndownService.addRule('linkWithSpacing', {
+		filter: 'a',
+		replacement: function (content, node, options) {
+			if (!(node instanceof HTMLElement)) return content;
+			
+			const href = node.getAttribute('href');
+			const title = node.getAttribute('title');
+			
+			if (!href || !content.trim()) {
+				return content;
+			}
+
+			// Get the previous and next siblings to determine spacing
+			const prevSibling = node.previousSibling;
+			const nextSibling = node.nextSibling;
+			
+			// Check if we need leading space
+			let leadingSpace = '';
+			if (prevSibling && prevSibling.nodeType === Node.TEXT_NODE) {
+				const prevText = prevSibling.textContent || '';
+				// Add space if previous text doesn't end with whitespace
+				if (prevText && !/\s$/.test(prevText)) {
+					leadingSpace = ' ';
+				}
+			}
+
+			// Check if we need trailing space
+			let trailingSpace = '';
+			if (nextSibling && nextSibling.nodeType === Node.TEXT_NODE) {
+				const nextText = nextSibling.textContent || '';
+				// Add space if next text doesn't start with whitespace
+				if (nextText && !/^\s/.test(nextText)) {
+					trailingSpace = ' ';
+				}
+			}
+
+			// Build the markdown link
+			let link = `[${content}](${href})`;
+			if (title) {
+				link = `[${content}](${href} "${title}")`;
+			}
+
+			return `${leadingSpace}${link}${trailingSpace}`;
+		}
+	});
+
 	function handleNestedEquations(table: Element): string {
 		const mathElements = table.querySelectorAll('math[alttext]');
 		if (mathElements.length === 0) return '';
